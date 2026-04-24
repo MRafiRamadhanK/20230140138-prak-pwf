@@ -9,7 +9,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return redirect()->route('product.index');
+    return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/about', [\App\Http\Controllers\namaController::class, 'about'])->middleware(['auth', 'verified'])->name('about');
