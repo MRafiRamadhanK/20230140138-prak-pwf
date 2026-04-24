@@ -19,3 +19,11 @@ kalo login user
 <img width="1530" height="971" alt="image" src="https://github.com/user-attachments/assets/c047f23b-72ee-426e-a3be-f6faca5177db" />
 kalo login admin
 <img width="1460" height="602" alt="image" src="https://github.com/user-attachments/assets/7f9e8cf1-f16c-4840-ae4a-53d207d381ad" />
+
+
+Tugas 6
+<img width="1448" height="752" alt="image" src="https://github.com/user-attachments/assets/a60e83c3-8ae8-4ff3-a8a2-ba222d8d967d" />
+<img width="1267" height="738" alt="image" src="https://github.com/user-attachments/assets/28137c6f-8c73-4eca-8c97-0b4286928a69" />
+<img width="1400" height="732" alt="image" src="https://github.com/user-attachments/assets/92b135e1-22d5-4d8e-a3ad-61c9ac0eb3d0" />
+<img width="1458" height="771" alt="image" src="https://github.com/user-attachments/assets/53403b9c-7ef4-48f6-a607-345455587354" />
+<img width="1322" height="684" alt="image" src="https://github.com/user-attachments/assets/f285645e-34d8-43f4-afff-7bc42567942d" />
