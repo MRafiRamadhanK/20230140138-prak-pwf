@@ -18,9 +18,14 @@
                     <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
                         {{ __('About') }}
                     </x-nav-link>
-                    @can('manage-supplier')
-                    <x-nav-link :href="route('suppliers.index')" :active="request()->routeIs('suppliers.*')">
-                        {{ __('Suppliers') }}
+                    @can('manage-products')
+                    <x-nav-link :href="route('product.index')" :active="request()->routeIs('product.*')">
+                        {{ __('Products') }}
+                    </x-nav-link>
+                    @endcan
+                    @can('manage-categories')
+                    <x-nav-link :href="route('category.index')" :active="request()->routeIs('category.*')">
+                        {{ __('Categories') }}
                     </x-nav-link>
                     @endcan
                 </div>
@@ -81,9 +86,14 @@
             <x-responsive-nav-link :href="route('about')" :active="request()->routeIs('about')">
                 {{ __('About') }}
             </x-responsive-nav-link>
-            @can('manage-supplier')
-            <x-responsive-nav-link :href="route('suppliers.index')" :active="request()->routeIs('suppliers.*')">
-                {{ __('Suppliers') }}
+            @can('manage-products')
+            <x-responsive-nav-link :href="route('product.index')" :active="request()->routeIs('product.*')">
+                {{ __('Products') }}
+            </x-responsive-nav-link>
+            @endcan
+            @can('manage-categories')
+            <x-responsive-nav-link :href="route('category.index')" :active="request()->routeIs('category.*')">
+                {{ __('Categories') }}
             </x-responsive-nav-link>
             @endcan
         </div>

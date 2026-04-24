@@ -4,11 +4,14 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     
-                    <div class="flex justify-between items-center mb-6">
-                        <h2 class="text-2xl font-semibold">Product List</h2>
-                        <a href="{{ route('product.create') }}" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg transition shadow-sm">
-                            + Add New Product
-                        </a>
+                    <div class="flex items-center justify-between mb-6">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-800 dark:text-gray-100 tracking-tight">Product List</h2>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Manage your product inventory</p>
+                        </div>
+                        @can('manage-products')
+                            <x-add-product :url="route('product.create')" :name="'Product'"/>
+                        @endcan
                     </div>
 
                     @if (session('success'))
@@ -28,6 +31,7 @@
                             <thead>
                                 <tr class="bg-gray-50 dark:bg-gray-700">
                                     <th class="px-6 py-3 border-b border-gray-200 dark:border-gray-600 font-medium uppercase text-xs text-gray-500 dark:text-gray-400">Name</th>
+                                    <th class="px-6 py-3 border-b border-gray-200 dark:border-gray-600 font-medium uppercase text-xs text-gray-500 dark:text-gray-400">Category</th>
                                     <th class="px-6 py-3 border-b border-gray-200 dark:border-gray-600 font-medium uppercase text-xs text-gray-500 dark:text-gray-400">Qty</th>
                                     <th class="px-6 py-3 border-b border-gray-200 dark:border-gray-600 font-medium uppercase text-xs text-gray-500 dark:text-gray-400">Price</th>
                                     <th class="px-6 py-3 border-b border-gray-200 dark:border-gray-600 font-medium uppercase text-xs text-gray-500 dark:text-gray-400 text-right">Actions</th>
@@ -38,6 +42,9 @@
                                     <tr class="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition">
                                         <td class="px-6 py-4">
                                             <div class="text-sm font-medium text-gray-900 dark:text-gray-100">{{ $product->name }}</div>
+                                        </td>
+                                        <td class="px-6 py-4">
+                                            <div class="text-sm text-gray-600 dark:text-gray-400">{{ $product->category->name ?? '-' }}</div>
                                         </td>
                                         <td class="px-6 py-4">
                                             <div class="text-sm text-gray-600 dark:text-gray-400">{{ $product->quantity }}</div>

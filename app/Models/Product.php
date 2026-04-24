@@ -11,5 +11,17 @@ class Product extends Model
         'quantity',
         'price',
         'user_id',
+        'category_id',
     ];
+
+    public function category()
+    {
+        // Many products belong to one category
+        return $this->belongsTo(Category::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

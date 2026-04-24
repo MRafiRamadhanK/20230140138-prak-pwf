@@ -22,9 +22,10 @@ class UpdateProductRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'sometimes|string|max:255',
-            'quantity' => 'sometimes|integer',
-            'price' => 'sometimes|numeric',
+            'name' => 'required|string|max:255',
+            'quantity' => 'required|string', // Quantity as string per PDF
+            'price' => 'required|numeric|between:0,99999999.99', // Max 10 digits total
+            'category_id' => 'required|exists:categories,id', // Must exist in categories table
             'user_id' => 'sometimes|exists:users,id',
         ];
     }

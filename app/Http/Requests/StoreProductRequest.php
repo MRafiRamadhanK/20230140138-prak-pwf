@@ -23,8 +23,9 @@ class StoreProductRequest extends FormRequest
     {
         return [
             'name' => 'required|string|max:255',
-            'quantity' => 'required|integer',
-            'price' => 'required|numeric',
+            'quantity' => 'required|string', // Quantity as string per PDF
+            'price' => 'required|numeric|between:0,99999999.99', // Max 10 digits total
+            'category_id' => 'required|exists:categories,id', // Must exist in categories table
         ];
     }
 
