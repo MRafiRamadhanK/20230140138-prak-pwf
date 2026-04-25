@@ -27,3 +27,12 @@ Tugas 6
 <img width="1400" height="732" alt="image" src="https://github.com/user-attachments/assets/92b135e1-22d5-4d8e-a3ad-61c9ac0eb3d0" />
 <img width="1458" height="771" alt="image" src="https://github.com/user-attachments/assets/53403b9c-7ef4-48f6-a607-345455587354" />
 <img width="1322" height="684" alt="image" src="https://github.com/user-attachments/assets/f285645e-34d8-43f4-afff-7bc42567942d" />
+
+UCP1
+<img width="1919" height="932" alt="image" src="https://github.com/user-attachments/assets/e914d920-01b2-489e-83ae-b70e49c6f106" />
+<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/7ff7898f-d9fb-4dd3-a958-0ab5d45dee84" />
+<img width="1914" height="903" alt="image" src="https://github.com/user-attachments/assets/78fd0ff5-db10-46ab-947e-9f8b8f39fab8" />
+<img width="1913" height="674" alt="image" src="https://github.com/user-attachments/assets/9b107f03-2350-4f3b-99b5-e43c026609bf" />
+
+
+
